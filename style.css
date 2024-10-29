@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+}
+.small{
+    font-size: 20px;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.box{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(1, 1, 1, 0.1);
+    padding: 20px;
+}
+.form-cont{
+margin-top: 20px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+input,select,textarea{
+    margin-top: 5px;
+    padding: 12px 12px;
+    font-size: 15px;
+    border: 1px solid rgb(12, 10, 10,0.8);
+    border-radius: 5px;
+}
+.addsub {
+    grid-column: 1 / span 2;
+  }
+  .addsub textarea {
+    width: 100%;
+  }
+  label{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  @media (max-width: 460px) {
+    .addsub {
+      grid-column: 1 / span 1;
+    }
+}
+input:focus{
+    outline-color: black;
+}
+.button_cont{
+display: flex;
+justify-content: end;
+margin-top: 8px;
+}
+button{
+    font-size: 18px;
+    font-weight: 500;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 8px;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background-color: #ccc;
+    color: black;
+    border: 1px solid black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
