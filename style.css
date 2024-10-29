@@ -1,82 +1,58 @@
 *{
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
+    font-family: "lato", sans-serif;
 }
-body{
-    background-color: #ccc;
+.img1{
+    background-image: url(image1.png);
+    min-height: 100vh;
 }
-.small{
-    font-size: 20px;
+.img2{
+    background-image: url(image2.png);
+    min-height: 400px;
 }
-.container{
-    max-width: 900px;
-    margin: 0 auto;
+.img3{
+    background-image: url(image3.png);
+    min-height: 400px;
 }
-.box{
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 3px 4px 5px rgba(1, 1, 1, 0.1);
-    padding: 20px;
-}
-.form-cont{
-margin-top: 20px;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 20px;
-}
-.sub{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-}
-input,select,textarea{
-    margin-top: 5px;
-    padding: 12px 12px;
-    font-size: 15px;
-    border: 1px solid rgb(12, 10, 10,0.8);
-    border-radius: 5px;
-}
-.addsub {
-    grid-column: 1 / span 2;
-  }
-  .addsub textarea {
-    width: 100%;
-  }
-  label{
-    font-size: 20px;
-    font-weight: 600;
-  }
-  @media (max-width: 460px) {
-    .addsub {
-      grid-column: 1 / span 1;
+    .img1, .img2, .img3{
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
+
+
+.text{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    color: rgb(214, 212, 212);
+  text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 4px;
 }
-input:focus{
-    outline-color: black;
+.text span{
+    background-color: rgb(38, 37, 37);
+    padding: 20px 28px;
 }
-.button_cont{
-display: flex;
-justify-content: end;
-margin-top: 8px;
+.one{
+    text-align: center;
+    padding: 30px 80px;
 }
-button{
-    font-size: 18px;
-    font-weight: 500;
-    background-color: red;
-    border: 1px solid red;
-    border-radius: 5px;
-    color: white;
-    padding: 5px 8px;
-    transition: 0.3s ease-in;
+.one p{
+    margin-top: 20px;
+    font-size: 15px;
 }
-button:hover{
-    background-color: #ccc;
-    color: black;
-    border: 1px solid black;
-    transition: 0.3s ease-out;
-    cursor: pointer;
+.light{
+   background-color:  #f4f4f4 ;
+   color: #666;
 }
+.dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
